@@ -8,5 +8,15 @@ As dependências necessárias para  o front e para o back já estão listadas no
 npm install
 ```
 
-As informações inseridas são enviadas para nosso banco de dados.
+Para rodar o backend: 
+```
+npm start
+```
+
+Para rodar o frontend: 
+```
+npm run dev
+```
+
+As informações inseridas no formulário são enviadas para nosso banco de dados através do método Post.
 
