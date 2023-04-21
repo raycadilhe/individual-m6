@@ -1,14 +1,18 @@
 // Importando o packages
-import express from 'express'
+import express from 'express';
+import Axios from 'axios';
+import cors from 'cors';
 
 // instanciando o servidor
 const app = express()
 
 // configurando o servidor para receber requisições com o corpo no formato JSON
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 
 // importando os controllers
-import adminController from './controllers/adminController.js';
+import adminController from './src/controllers/adminController.js'
+
 
 adminController.rotas(app)
 

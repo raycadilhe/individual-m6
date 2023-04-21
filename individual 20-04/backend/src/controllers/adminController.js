@@ -23,7 +23,7 @@ class adminController {
     static async inserir(req, res) {
         const admin = {
             nome: req.body.nome,
-            sobrenome: req.body.nome,
+            sobrenome: req.body.sobrenome,
             email: req.body.email,
             senha: req.body.senha
         }
